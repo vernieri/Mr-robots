@@ -1,5 +1,5 @@
-//dummie scroll test
-// abre um site e scrola pra baixo. 
+//DUMMIE SCROLL ROBOT!
+//abre um site e scrola pra baixo. 
 
 package links; //pacote, altere se for preciso.
 import org.openqa.selenium.JavascriptExecutor;
