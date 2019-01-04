@@ -13,16 +13,21 @@ public class VerifyLinks {
 	public static void main(String[] args) 
 	{
 		System.setProperty("webdriver.gecko.driver", "c:\\Program Files\\geckodriver.exe"); //Poe onde ta seu gecko
+		
+		//Criando a instancia do Selenium		
 		WebDriver driver=new FirefoxDriver();
 		
 		driver.manage().window().maximize();
 		
 		driver.get("https://ww2.soc.com.br/"); //site para exemplo
 		
+		//Passando arrayList
 		List<WebElement> links=driver.findElements(By.tagName("a"));
 		
+		//Saida, pode alterar e colocar num arquivo ou banco de dados tipo o Mongo.
 		System.out.println("Total links are "+links.size());
 		
+		//Laço de repeticao, aqui acontece a magica, ele chama o metodo ali em baixo.
 		for(int i=0;i<links.size();i++)
 		{
 			
@@ -36,6 +41,7 @@ public class VerifyLinks {
 		
 	}
 	
+	//Filtrando as conexoes.
 	public static void verifyLinkActive(String linkUrl)
 	{
         try 
