@@ -1,0 +1,37 @@
+//dummie scroll test
+// abre um site e scrola pra baixo. 
+
+package links; //pacote, altere se for preciso.
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+ 
+ 
+public class ScrollTestCase {
+ 
+ public static void main(String[] args) throws Exception {
+  
+ // Abrir browser + gecko
+  System.setProperty("webdriver.gecko.driver", "c:\\Program Files\\geckodriver.exe"); //Poe onde ta seu gecko
+	 
+  WebDriver driver=new FirefoxDriver();
+ 
+ 
+ // Maximizar o browser
+  driver.manage().window().maximize();
+ 
+ 
+  // Abrindo a Application
+  driver.get("http://youtube.com"); //um site qalqer
+  
+ 
+  // Esperar cinco segundos, assim nao vai logo de uma vez.
+  Thread.sleep(5000);
+ 
+ // Esse script vai escrolar a pagina pra baixo. Vc pode alterar, pra cima, pro lado, loop, single, etc...
+  ((JavascriptExecutor)driver).executeScript("scroll(0,400)");
+  
+     
+ }
+ 
+}
