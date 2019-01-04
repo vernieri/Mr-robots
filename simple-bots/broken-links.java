@@ -1,3 +1,5 @@
+package links;  //Comenta aqui pq esse é o pacote
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
  
@@ -5,18 +7,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-//Finding broken links with Selenium webdrive
  
 public class VerifyLinks {
  
 	public static void main(String[] args) 
 	{
+		System.setProperty("webdriver.gecko.driver", "c:\\Program Files\\geckodriver.exe"); //Poe onde ta seu gecko
 		WebDriver driver=new FirefoxDriver();
 		
 		driver.manage().window().maximize();
 		
-		driver.get("YOUR WEB PAGE HERE");
+		driver.get("https://ww2.soc.com.br/"); //site para exemplo
 		
 		List<WebElement> links=driver.findElements(By.tagName("a"));
 		
@@ -64,4 +65,3 @@ public class VerifyLinks {
 	 
  
 }
-
