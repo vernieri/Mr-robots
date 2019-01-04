@@ -16,7 +16,7 @@ public class VerifyLinks {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("http://www.google.co.in/");
+		driver.get("YOUR WEB PAGE HERE");
 		
 		List<WebElement> links=driver.findElements(By.tagName("a"));
 		
