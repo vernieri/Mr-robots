@@ -17,9 +17,9 @@ public class facebookRegistration {
 		
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.xpath(".//*[@id='u_0_j']")).sendKeys("Test Selenium");
+		driver.findElement(By.xpath(".//*[@id='u_0_j']")).sendKeys("Test Selenium"); //this id might change
 		
-		driver.findElement(By.xpath(".//*[@id='u_0_a']")).click();
+		driver.findElement(By.xpath(".//*[@id='u_0_a']")).click(); // this id might change
 		driver.findElement(By.xpath(".//*[@id='persist_box']")).click();
 		
 		Select sel1 = new Select(driver.findElement(By.xpath(".//*[@id='month']")));
@@ -31,7 +31,7 @@ public class facebookRegistration {
 		Select sel3 = new Select(driver.findElement(By.xpath(".//*[@id='year']")));
 		sel3.deselectByIndex(6);
 		
-		driver.findElement(By.xpath(".//*[@id='u_0_11']")).click();
+		driver.findElement(By.xpath(".//*[@id='u_0_11']")).click(); //this id might change as well
 
 		driver.findElement(By.xpath(".//*[@id='reg_pages_msg']/a")).click();
 		
