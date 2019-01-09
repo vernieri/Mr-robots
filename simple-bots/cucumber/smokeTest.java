@@ -34,5 +34,9 @@ public class SmokeTest {
 		
 		
 	}
+	@Then("^application should be closed$")
+	public void application_should_be_closed() throws Throwable{
+		driver.quit();
+	}
 	
 }
