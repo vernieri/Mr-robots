@@ -14,5 +14,9 @@ public class SmokeTest {
 		throw new PendingException();
 	}	
 
+	@Then("^user should be able to login sucessfully$")
+	public void user_should_be_to_login_sucessfully() throws Throwable{
+		throw new PendingException();
+	}	
 	
 }
