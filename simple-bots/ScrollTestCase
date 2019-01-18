@@ -10,8 +10,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class ScrollTestCase {
  
  public static void main(String[] args) throws Exception {
+  //String path = "c:\\Program Files\\geckodriver.exe"
   
- // Abrir browser + gecko
+ // Abrir browser + gecko (vc tem que ter o gecko ai, mude a path se necessario).
   System.setProperty("webdriver.gecko.driver", "c:\\Program Files\\geckodriver.exe"); //Poe onde ta seu gecko
 	 
   WebDriver driver=new FirefoxDriver();
