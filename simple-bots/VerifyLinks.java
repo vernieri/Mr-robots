@@ -19,7 +19,7 @@ public class VerifyLinks {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("https://ww2.soc.com.br/"); //site para exemplo
+		driver.get("https://YOUR-SITE.com/"); //site para exemplo
 		
 		//Passando arrayList
 		List<WebElement> links=driver.findElements(By.tagName("a"));
