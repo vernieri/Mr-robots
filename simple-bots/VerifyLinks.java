@@ -9,8 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
  
 public class VerifyLinks {
- 
-	public static void main(String[] args) 
+ 	public static void main(String[] args) 
 	{
 		System.setProperty("webdriver.gecko.driver", "c:\\Program Files\\geckodriver.exe"); //Poe onde ta seu gecko
 		
